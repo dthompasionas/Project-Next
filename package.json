@@ -1,0 +1,39 @@
+{
+  "name": "project-next",
+  "version": "1.0.0",
+  "description": "This full-stack application allows current homeowners to link up with local contractors to ease the home-flipping process. Homeowners can login to add their home address to the site and create home projects they want completed. Contractors can then see these projects and pick up projects they want, creating a relaxed flow of home restoration. ",
+  "main": "server.js",
+  "scripts": {
+    "test": "test",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dthompasionas/Project-Next.git"
+  },
+  "keywords": [
+    "mysql2",
+    "node.js",
+    "express.js",
+    "express-session",
+    "Sequelize",
+    ".env"
+  ],
+  "author": "Sons of Pitches",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dthompasionas/Project-Next/issues"
+  },
+  "homepage": "https://github.com/dthompasionas/Project-Next#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "connect-session-sequelize": "^7.0.4",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.0",
+    "express-session": "^1.17.1",
+    "handlebars": "^4.7.6",
+    "mysql2": "^2.2.5",
+    "sequelize": "^6.3.5"
+  }
+}
