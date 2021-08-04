@@ -1,5 +1,5 @@
-const { Model, DataTypes } = require('sequelize');
-const sequelize = require('../config/connection');
+const { Model, DataTypes } = require("sequelize");
+const sequelize = require("../config/connection");
 
 class Homeowner extends Model {}
 
@@ -12,48 +12,34 @@ Homeowner.init(
       autoIncrement: true,
     },
     name: {
-        type: DataTypes.STRING,
-        allowNull: false,
-      },
-      address: {
-        type: DataTypes.STRING,
-        allowNull: false,
-      },
-      email: {
-        type: DataTypes.STRING,
-        allowNull: false,
-        unique: true,
-        validate: {
-          isEmail: true,
-        },
-      },
-      password: {
-        type: DataTypes.STRING,
-        allowNull: false,
-        validate: {
-          len: [8],
-        },
+      type: DataTypes.STRING,
+      allowNull: false,
     },
-    project_id: {
-        type: DataTypes.INTEGER,
-        references: {
-            model: "project",
-            key: id,
-        },
+    address: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    email: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      unique: true,
+      validate: {
+        isEmail: true,
       },
-     contractor_id: {
-        type: DataTypes.INTEGER,
-        references: {
-            model: "contractor",
-            key: id,
-        },
+    },
+    password: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      validate: {
+        len: [8],
+      },
     },
   },
   {
     sequelize,
     freezeTableName: true,
     underscored: true,
-    modelName: 'homeowner',
+    modelName: "homeowner",
   }
 );
 

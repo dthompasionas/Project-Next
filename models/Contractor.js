@@ -30,20 +30,6 @@ Contractor.init(
           len: [8],
         },
     },
-    project_id: {
-        type: DataTypes.INTEGER,
-        references: {
-            model: "project",
-            key: id,
-        },
-      },
-     homeowner_id: {
-        type: DataTypes.INTEGER,
-        references: {
-            model: "homeowner",
-            key: id,
-        },
-    },
   },
   {
     sequelize,
@@ -51,6 +37,7 @@ Contractor.init(
     underscored: true,
     modelName: 'contractor',
   }
+
 );
 
 module.exports = Contractor;
