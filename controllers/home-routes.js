@@ -1,11 +1,12 @@
 const router = require('express').Router();
+const { Homeowner } = require('../models');
 const withAuth = require('../utils/auth');
 
 router.get('/', async (req, res) => {
   try {
       const userData = await Homeowner.findAll({
         attributes: { exclude: ['password'] },
-        order: [['username', 'ASC']],
+        order: [['email', 'ASC']],
       });
   
       const users = userData.map((el) => el.get({ plain: true }));
