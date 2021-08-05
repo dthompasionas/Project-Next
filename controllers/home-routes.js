@@ -11,7 +11,7 @@ router.get('/', async (req, res) => {
   
       const users = userData.map((el) => el.get({ plain: true }));
   
-      res.render('main', {
+      res.render('layouts/main', {
         users,
         logged_in: req.session.logged_in,
       });
