@@ -15,13 +15,9 @@ Homeowner.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    first_name: {
+    full_name: {
       type: DataTypes.STRING,
-      allowNull: false,
-    },
-    last_name: {
-      type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
     },
     address: {
       type: DataTypes.STRING,
