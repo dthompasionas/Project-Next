@@ -10,13 +10,17 @@
       integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
       crossorigin="anonymous"
     />
-    {{!-- <link rel="stylesheet" type="text/css" href="/css/style.css" /> --}}
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header>
+    <header class = "header1">
+      <div class = "headerheader">
       <h1 class="display-1">Welcome to Project Next</h1>
-    </header>
-    <nav class="nav">
+       </div>
+       <nav class="nav">
       <a class="nav-link" href="/">Home</a>
       {{#if loggedIn}}
         <button id="logout" class="nav-link btn btn-primary text-white">Logout</button>
@@ -24,11 +28,13 @@
         <a class="nav-link" href="/login">Login</a>
       {{/if}}
     </nav>
+    </header>
+ 
   <main>
-    <aside>
-      <h2>Find the right contractor for you!</h2>
+    <aside class = "header2">
+      <h2 class = "display-2">Find the right contractor for you!</h2>
     </aside>
-    <div >
+    <div class = "body">
       {{{body}}}
     </div>
   </main>
