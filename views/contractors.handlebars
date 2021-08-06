@@ -1,12 +1,26 @@
-function getContractorData() {
- var contractors = [];
- for(var i=0; i<25; i++) {
-  contractors.push({
-   name: faker.name.findName(),
-   email: faker.internet.email(),
-   city: faker.address.city(),
-   company: faker.company.companyName(),
-   phoneNumber: faker.phone.phoneNumber()
-  });
- }
- return contractors;
+ {{#each contractorData as |contractor|}}
+
+<div class="contractor-card">
+  <div class="contractor-header">
+    {{contractor.name}}
+  </div>
+  <div class="card-body">
+    <p>
+      Email:
+      {{contractor.email}}
+    </p>
+    <p>
+      City:
+      {{contractor.city}}
+    </p>
+     <p>
+      Company:
+      {{contractor.company}}
+    </p>
+     <p>
+      Phone number:
+      {{contractor.phoneNumber}}
+    </p>
+  </div>
+</div>
+{{/each}}

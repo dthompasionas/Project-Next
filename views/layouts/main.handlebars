@@ -1,23 +1,29 @@
-<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Next</title>
-</head>
-<body>
-  <header>
-    <h1>Welcome to Project Next</h1>
-  </header>
-  <nav>
-    {{#if loggedIn}}
-    <a href="/">Home</a>
-    <button id="logout" class="btn-no-style">Logout</button>
-    {{else}}
-    <a href="/login">Login</a>
-    {{/if}}
-  </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    {{!-- <link rel="stylesheet" type="text/css" href="/css/style.css" /> --}}
+  </head>
+  <body>
+    <header>
+      <h1 class="display-1">Welcome to Project Next</h1>
+    </header>
+    <nav class="nav">
+      <a class="nav-link" href="/">Home</a>
+      {{#if loggedIn}}
+        <button id="logout" class="nav-link btn btn-primary text-white">Logout</button>
+      {{else}}
+        <a class="nav-link" href="/login">Login</a>
+      {{/if}}
+    </nav>
   <main>
     <aside>
       <h2>Find the right contractor for you!</h2>
@@ -31,3 +37,4 @@
   {{/if}}
 </body>
 </html>
+
