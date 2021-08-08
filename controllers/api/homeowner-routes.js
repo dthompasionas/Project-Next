@@ -10,6 +10,29 @@ router.get("/", async (req, res) => {
   }
 });
 
+router.post('/create', async (req, res) => {
+  try {
+    const dbUserData = await Homeowner.create({
+      full_name: req.body.full_name,
+      address: req.body.address,
+      city: req.body.city,
+      state: req.body.state,
+      zip: req.body.zip,
+      email: req.body.email,
+      password: req.body.password,
+    });
+
+    req.session.save(() => {
+      req.session.loggedIn = true;
+
+      res.status(200).json(dbUserData);
+    });
+  } catch (err) {
+    console.log(err);
+    res.status(500).json(err);
+  }
+});
+
 router.post("/login", async (req, res) => {
   try {
     const userData = await Homeowner.findOne({
