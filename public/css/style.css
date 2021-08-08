@@ -1,5 +1,5 @@
 * {
-    font-family: 'Merriweather', serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .header1{
@@ -10,15 +10,31 @@
 .headerheader{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    padding-right: 50px;
+}
+
+.Welcome{
+    font-size: 30px;
+    font-weight: bold;
+    padding-right: 10px;
+    padding-top: 5px;
 }
 
 .header2{
     display: flex;
     justify-content: center;
-  }
+}
+
+.display-1 {
+    font-family: 'Rammetto One', cursive;
+}
 
 .display-2{
-    font-size: xx-large;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(109, 106, 106);
+    text-align: center;
 }
 
 .nav{
@@ -31,6 +47,12 @@
 }
 
 .login-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.signup-card{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -56,17 +78,28 @@
     border-radius: 3px;
 }
 
+.paige-title {
+    color: rgb(109, 106, 106);
+}
+
 .btn{
     background-color: lightseagreen;
 }
 .nav-link{
-    color: black;
+    background-color: lightseagreen;
+    text-decoration: none;
+}
+
+.nav-link :hover {
+    background-color: darkgray;
 }
 
 .homeowner-card {
     padding: .5%;
     background-color: whitesmoke;
     border-radius: 3px;
+    border-bottom: solid darkgray 2px;
+    
 }
 
 .project-input {
@@ -78,8 +111,25 @@
 
 .homeowner-header{
     font-size: xx-large;
+    
 }
 
 .nav{
     background-color: lightseagreen;
+}
+
+.nav :hover {
+    background-color: whitesmoke;
+}
+
+.contractor-card {
+    border-top: darkgray solid 2px;
+    border-left: darkgray solid 2px;
+    border-right: darkgray solid 2px;
+    padding: 10px;
+    background: whitesmoke;
+}
+
+.contractor-header {
+    font-weight: bold;
 }

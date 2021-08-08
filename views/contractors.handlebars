@@ -1,26 +1,28 @@
+<div class="container">
  {{#each contractorData as |contractor|}}
 
-<div class="contractor-card">
-  <div class="contractor-header">
-    {{contractor.name}}
+  <div class="contractor-card">
+    <div class="contractor-header">
+      {{contractor.name}}
+    </div>
+    <div class="card-body">
+      <p>
+        Email:
+        {{contractor.email}}
+      </p>
+      <p>
+        City:
+        {{contractor.city}}
+      </p>
+      <p>
+        Company:
+        {{contractor.company}}
+      </p>
+      <p>
+        Phone number:
+        {{contractor.phoneNumber}}
+      </p>
+    </div>
   </div>
-  <div class="card-body">
-    <p>
-      Email:
-      {{contractor.email}}
-    </p>
-    <p>
-      City:
-      {{contractor.city}}
-    </p>
-     <p>
-      Company:
-      {{contractor.company}}
-    </p>
-     <p>
-      Phone number:
-      {{contractor.phoneNumber}}
-    </p>
-  </div>
-</div>
 {{/each}}
+</div>
