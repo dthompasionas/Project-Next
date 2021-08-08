@@ -1,0 +1,81 @@
+* {
+    font-family: 'Merriweather', serif;
+}
+
+.header1{
+  background-image: url(/images/wood3.jpg);
+  background-color:lightseagreen;
+}
+
+.headerheader{
+    display: flex;
+    justify-content: center;
+}
+
+.header2{
+    display: flex;
+    justify-content: center;
+  }
+
+.display-2{
+    font-size: xx-large;
+}
+
+.nav{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.row {
+   display: flex;
+}
+
+.login-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.form-input {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    
+}
+
+.form-group {
+    padding: .5%;
+    background-color: whitesmoke;
+    border-radius: 3px;
+}
+
+.btn{
+    background-color: lightseagreen;
+}
+.nav-link{
+    color: black;
+}
+
+.homeowner-card {
+    padding: .5%;
+    background-color: whitesmoke;
+    border-radius: 3px;
+}
+
+.project-input {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    
+}
+
+.homeowner-header{
+    font-size: xx-large;
+}

@@ -1,7 +1,7 @@
 const loginFormHandler = async (event) => {
 
     event.preventDefault();
-
+    const loggedIn;
     const email = document.querySelector('#email-login').value.trim();
     const password = document.querySelector('#password-login').value.trim();
   
@@ -14,6 +14,7 @@ const loginFormHandler = async (event) => {
       });
   
       if (response.ok) {
+        loggedIn = true;
         document.location.replace('/dashboard');
       } else {
         alert('Failed to log in');
