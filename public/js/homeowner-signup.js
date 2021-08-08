@@ -1,5 +1,7 @@
 const signupFormHandler = async (event) => {
 
+console.log("Signing up a new user");
+
     event.preventDefault();
     const email = document.querySelector('#email-signup').value.trim();
     const full_name = document.querySelector('#name-signup').value.trim();
@@ -11,14 +13,15 @@ const signupFormHandler = async (event) => {
   
     if (full_name && address && city && state && zip && email && password) {
      
-      const response = await fetch('/api/homeowner/login', {
+      const response = await fetch('/api/homeowner/signup', {
         method: 'POST',
         body: JSON.stringify({ full_name, address, city, state, zip, email, password  }),
         headers: { 'Content-Type': 'application/json' },
       });
   
       if (response.ok) {
-        document.location.replace('/homeowner/dashboard');
+        document.location.replace('/dashboard');
+        alert('You are now signed up! Please log in.');
       } else {
         alert('Failed to sign up');
       }

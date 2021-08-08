@@ -4,8 +4,6 @@ const apiRoutes = require('./api');
 const contractorRoutes = require('./contractor-routes');
 const dashboardRoutes = require('./dashboard-routes');
 
-
-
 router.use('/', homeRoutes);
 router.use('/api', apiRoutes);
 router.use('/contractor', contractorRoutes);

@@ -3,7 +3,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Project Next</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -19,16 +19,20 @@
     <header class = "header1">
       <div class = "headerheader">
       <h1 class="display-1">Welcome to Project Next</h1>
-       </div>
-       <nav class="nav">
-      <a class="nav-link" href="/">Home</a>
-      {{#if loggedIn}}
-        <button id="logout" class="nav-link btn btn-primary text-white">Logout</button>
+       </div>  
+     </header>
+      {{#if loggedIn}} 
+      <nav class="nav">
+        <a class="nav-link" href="/contractor">Contractors</a>  
+        <a id="logout" class="nav-link">Logout</a>
+         </nav>
       {{else}}
-        <a class="nav-link" href="/login">Login</a>
+         <nav class="nav">
+         <a class="nav-link" href="/">Login</a>
+         </nav>
       {{/if}}
-    </nav>
-    </header>
+
+
  
   <main>
     <aside class = "header2">
@@ -39,7 +43,7 @@
     </div>
   </main>
   {{#if loggedIn}}
-  <script src="/public/js/homeowner-logout.js"></script>
+  <script src="/js/homeowner-logout.js"></script>
   {{/if}}
 </body>
 </html>
