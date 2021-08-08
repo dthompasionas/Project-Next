@@ -10,7 +10,7 @@ router.get("/", async (req, res) => {
   }
 });
 
-router.post('/create', async (req, res) => {
+router.post('/signup', async (req, res) => {
   try {
     const dbUserData = await Homeowner.create({
       full_name: req.body.full_name,
@@ -24,7 +24,7 @@ router.post('/create', async (req, res) => {
 
     req.session.save(() => {
       req.session.loggedIn = true;
-
+      req.session.email = dbUserData.email;
       res.status(200).json(dbUserData);
     });
   } catch (err) {
@@ -58,8 +58,11 @@ router.post("/login", async (req, res) => {
 
     req.session.save(() => {
       req.session.homeowner_id = userData.id;
-      req.session.logged_in = true;
+      req.session.loggedIn = true;
       req.session.email = userData.email;
+      
+      console.log("Logging in homeowner", userData.full_name);
+
       res.json({ homeowner: userData, message: "You are now logged in!" });
    
     });
@@ -69,7 +72,7 @@ router.post("/login", async (req, res) => {
 });
 
 router.post("/logout", (req, res) => {
-  if (req.session.logged_in) {
+  if (req.session.loggedIn) {
     req.session.destroy(() => {
       res.status(204).end();
     });
