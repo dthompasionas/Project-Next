@@ -21,7 +21,7 @@ console.log("Signing up a new user");
   
       if (response.ok) {
         document.location.replace('/dashboard');
-        alert('You are now signed up! Please log in.');
+        alert('You are now signed up!');
       } else {
         alert('Failed to sign up');
       }

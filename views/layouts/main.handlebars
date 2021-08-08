@@ -10,17 +10,18 @@
       integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" type="text/css" href="/css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rammetto+One&family=Sigmar+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+
   </head>
   <body>
     <header class = "header1">
-      <div class = "headerheader">
-      <h1 class="display-1">Welcome to Project Next</h1>
-       </div>  
-     </header>
+      <div class = "headerheader text-light">
+        <div class="welcome">Welcome to</div>
+        <h1 class="display-1">Project Next</h1>
+      </div>  
       {{#if loggedIn}} 
       <nav class="nav">
         <a class="nav-link" href="/contractor">Contractors</a>  
@@ -28,11 +29,11 @@
          </nav>
       {{else}}
          <nav class="nav">
-         <a class="nav-link" href="/">Login</a>
+         <a id="login" class="nav-link" href="/">Login</a>
          </nav>
       {{/if}}
-
-
+    </header>
+     
  
   <main>
     <aside class = "header2">
