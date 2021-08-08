@@ -40,6 +40,12 @@
 .nav{
     display: flex;
     justify-content: flex-end;
+    background-color: lightseagreen;
+    /*box-shadow: gray 5px 10px 10px;*/
+}
+
+.nav :hover {
+    background-color: white;
 }
 
 .row {
@@ -50,6 +56,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
 }
 
 .signup-card{
@@ -76,6 +83,15 @@
     padding: .5%;
     background-color: whitesmoke;
     border-radius: 3px;
+    
+}
+
+.login-form {
+    box-shadow: gray 3px 3px 10px;
+}
+
+.signup-form {
+    box-shadow: gray 3px 3px 10px;
 }
 
 .paige-title {
@@ -95,10 +111,10 @@
 }
 
 .homeowner-card {
-    padding: .5%;
+    padding: 20px;
     background-color: whitesmoke;
     border-radius: 3px;
-    border-bottom: solid darkgray 2px;
+    box-shadow: gray 5px 5px 10px;
     
 }
 
@@ -114,20 +130,19 @@
     
 }
 
-.nav{
-    background-color: lightseagreen;
-}
 
-.nav :hover {
-    background-color: whitesmoke;
-}
+
+
 
 .contractor-card {
-    border-top: darkgray solid 2px;
-    border-left: darkgray solid 2px;
-    border-right: darkgray solid 2px;
-    padding: 10px;
+    padding: 20px;
     background: whitesmoke;
+    box-shadow: gray 3px 3px 10px;
+    
+}
+
+.card-container {
+    padding: 10px;
 }
 
 .contractor-header {
