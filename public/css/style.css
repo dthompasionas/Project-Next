@@ -104,6 +104,7 @@
 .nav-link{
     background-color: lightseagreen;
     text-decoration: none;
+    color: black;
 }
 
 .nav-link :hover {
