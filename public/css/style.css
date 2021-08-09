@@ -40,11 +40,8 @@
 .nav{
     display: flex;
     justify-content: flex-end;
-
-
+   
 }
-
-
 
 .nav :hover {
     background-color: white;
@@ -106,11 +103,15 @@
 }
 .nav-link{
     background-color: lightseagreen;
-    text-decoration: none;
+    text-decoration: none; 
+    color: white;
+    font-size: 20px;
 }
 
 .nav-link :hover {
     background-color: darkgray;
+   
+
 }
 
 .homeowner-card {
