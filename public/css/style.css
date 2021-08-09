@@ -103,14 +103,18 @@
 }
 .nav-link{
     background-color: lightseagreen;
+
     text-decoration: none; 
+
     color: white;
     font-size: 20px;
 }
 
 .nav-link :hover {
+
     background-color: darkgray;
    
+    color: lightseagreen;
 
 }
 
