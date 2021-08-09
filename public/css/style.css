@@ -107,11 +107,12 @@
 .nav-link{
     background-color: lightseagreen;
     text-decoration: none;
-    color: black;
+    color: white;
+    font-size: 20px;
 }
 
 .nav-link :hover {
-    background-color: darkgray;
+    color: lightseagreen;
 }
 
 .homeowner-card {
