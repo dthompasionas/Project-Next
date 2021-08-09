@@ -31,6 +31,7 @@ Use this base login to view functionality email: example@example.com Password: b
 Contributions for this project came from Dthompasionas, Panicor, Avaniw, and JulioPlaceres
 
 # Screenshot:
+![](/images/Projectnext-screenshot.jpg)
 
 # Questions
 Contact me with any questions here:
