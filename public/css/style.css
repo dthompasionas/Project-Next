@@ -40,12 +40,15 @@
 .nav{
     display: flex;
     justify-content: flex-end;
-    background-color: lightseagreen;
-    /*box-shadow: gray 5px 10px 10px;*/
+
+
 }
+
+
 
 .nav :hover {
     background-color: white;
+
 }
 
 .row {
