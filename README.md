@@ -2,6 +2,8 @@
 
 https://github.com/dthompasionas/Project-Next
 
+https://project-next.herokuapp.com/
+
 # Description
 This full-stack application allows current homeowners to link up with local contractors to ease the home-flipping process. Homeowners can login to add their home address to the site and create home projects they want completed. Contractors can then see these projects and pick up projects they want, creating a relaxed flow of home restoration
 
@@ -31,7 +33,11 @@ Use this base login to view functionality email: example@example.com Password: b
 Contributions for this project came from Dthompasionas, Panicor, Avaniw, and JulioPlaceres
 
 # Screenshot:
-![](/images/Projectnext-screenshot.jpg)
+
+<img src="./images/Projectnext-screenshot.png" alt="drawing" width="600"/>
+<img src="./images/contractors.png" alt="contractor-page" width="600"/>
+<img src="./images/dashboard.png" alt="dashboard-page" width="600"/>
+
 
 # Questions
 Contact me with any questions here:
